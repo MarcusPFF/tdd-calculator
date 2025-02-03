@@ -10,7 +10,7 @@ This is a simple calculator program built using Java and Test-Driven Development
 - **Multiplication**: Multiplies two numbers.
 - **Division**: Divides one number by another, with a check to prevent division by zero.
 
-## Eksample Usage
+## Example Usage
 
 ```java
 Calculator calculator = new Calculator();
@@ -24,3 +24,8 @@ int sumFromString = calculator.add("1,2,3");  // 6
 // Add numbers from an array
 int[] numbers = {1, 2, 3};
 int sumFromArray = calculator.add(numbers);  // 6
+
+```
+## GIT LOG & GIT STATUS
+![img_2.png](img_2.png)
+![img_3.png](img_3.png)
