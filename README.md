@@ -1,7 +1,7 @@
 
 # TDD Calculator
 
-This is a simple calculator program built using Java and Test-Driven Development (TDD). It supports basic arithmetic operations and has been tested using JUnit 5.
+This is a simple calculator program built using Java and Test-Driven Development (TDD). It uses JUNIT 5 to verify the results. Try it out!
 
 ## Features
 
