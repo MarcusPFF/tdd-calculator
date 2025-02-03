@@ -1,5 +1,26 @@
-# tdd-Calculator
 
-Simple calculator application that uses JUNIT5 testing to verify the results. Uploaded to github using git
-![image](https://github.com/user-attachments/assets/2c3647e2-b896-4d5b-b61c-ae4360ace820)
-![image](https://github.com/user-attachments/assets/82172359-85eb-4369-bbd4-60f2cce01fd1)
+# TDD Calculator
+
+This is a simple calculator program built using Java and Test-Driven Development (TDD). It supports basic arithmetic operations and has been tested using JUnit 5.
+
+## Features
+
+- **Addition**: Supports adding two numbers, a string of numbers, and an array of numbers
+- **Subtraction**: Subtracts one number from another.
+- **Multiplication**: Multiplies two numbers.
+- **Division**: Divides one number by another, with a check to prevent division by zero.
+
+## Eksample Usage
+
+```java
+Calculator calculator = new Calculator();
+
+// Add two numbers
+int sum = calculator.add(2, 3);  // 5
+
+// Add numbers from a string
+int sumFromString = calculator.add("1,2,3");  // 6
+
+// Add numbers from an array
+int[] numbers = {1, 2, 3};
+int sumFromArray = calculator.add(numbers);  // 6

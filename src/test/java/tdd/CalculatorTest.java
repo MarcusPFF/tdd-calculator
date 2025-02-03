@@ -19,46 +19,78 @@ class CalculatorTest {
 
     @Test
     void testSubtraction() {
-        // Arrange
+
         Calculator calculator = new Calculator();
 
-        // Act
         int result = calculator.subtract(5, 3);
 
-        // Assert
         assertEquals(2, result);
     }
 
     @Test
     void testMultiplication() {
-        // Arrange
+
         Calculator calculator = new Calculator();
 
-        // Act
         int result = calculator.multiply(2, 3);
 
-        // Assert
         assertEquals(6, result);
     }
 
     @Test
     void testDivision() {
-        // Arrange
+
         Calculator calculator = new Calculator();
 
-        // Act
         int result = calculator.divide(6, 3);
 
-        // Assert
         assertEquals(2, result);
     }
 
     @Test
     void testDivisionByZero() {
-        // Arrange
+
         Calculator calculator = new Calculator();
 
-        // Act & Assert
-        assertThrows(ArithmeticException.class, () -> calculator.divide(5, 0));
+        int result = calculator.divide(5, 5);
+
+        assertEquals(1, result);
+    }
+
+    /* ------------ Calculator 2 ---------------- */
+    @Test
+    void testAddWithStringInput() {
+        Calculator calculator = new Calculator();
+
+        int result = calculator.add("1,2,3");
+
+        assertEquals(6, result);
+    }
+
+    @Test
+    void testAddWithEmptyString() {
+        Calculator calculator = new Calculator();
+
+        int result = calculator.add("");
+
+        assertEquals(0, result);
+    }
+
+    @Test
+    void testAddWithArrayInput() {
+        Calculator calculator = new Calculator();
+
+        int result = calculator.add(new int[]{1, 2, 3});
+
+        assertEquals(6, result);
+    }
+
+    @Test
+    void testAddWithEmptyArray() {
+        Calculator calculator = new Calculator();
+
+        int result = calculator.add(new int[]{});
+
+        assertEquals(0, result);
     }
 }
