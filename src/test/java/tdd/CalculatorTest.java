@@ -2,6 +2,7 @@ package tdd;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class CalculatorTest {
 
@@ -52,10 +53,21 @@ class CalculatorTest {
 
         Calculator calculator = new Calculator();
 
-        int result = calculator.divide(5, 5);
+        int result = calculator.divide(5, 0);
 
-        assertEquals(1, result);
+        assertEquals(0, result);
     }
+
+    @Test
+    void testDivideNull(){
+
+        Calculator calculator = new Calculator();
+        assertThrows(ArithmeticException.class,()->{
+            calculator.divide(3,0);
+        });
+
+    }
+
 
     /* ------------ Calculator 2 ---------------- */
     @Test
